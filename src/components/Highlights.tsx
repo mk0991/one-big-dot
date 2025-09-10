@@ -1,9 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Bed, Utensils, Camera, MapPin } from 'lucide-react';
-import suiteImage from '@/assets/suite-room.jpg';
-import restaurantImage from '@/assets/restaurant.jpg';
-import safariImage from '@/assets/safari-activity.jpg';
+// Using public image paths directly
 
 const Highlights = () => {
   const highlights = [
@@ -11,7 +9,7 @@ const Highlights = () => {
       icon: Bed,
       title: 'Luxury Accommodations',
       description: 'From intimate suites to spacious family rooms, each space is thoughtfully designed with modern amenities and authentic African touches.',
-      image: suiteImage,
+      image: '/suite-room.jpg',
       link: '/rooms',
       buttonText: 'View Rooms'
     },
@@ -19,7 +17,7 @@ const Highlights = () => {
       icon: Utensils,
       title: 'Exceptional Dining',
       description: 'Savor contemporary cuisine with local influences at our signature restaurant, complemented by an extensive wine selection.',
-      image: restaurantImage,
+      image: '/restaurant.jpg',
       link: '/dining',
       buttonText: 'Discover Dining'
     },
@@ -27,7 +25,7 @@ const Highlights = () => {
       icon: Camera,
       title: 'Safari Adventures',
       description: 'Explore Etosha National Park, experience traditional villages, and discover the pristine wilderness of Northern Namibia.',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       link: '/activities',
       buttonText: 'Plan Activities'
     },
@@ -35,7 +33,7 @@ const Highlights = () => {
       icon: MapPin,
       title: 'Prime Location',
       description: 'Perfectly positioned for exploring Namibia\'s natural wonders, cultural heritage, and unforgettable wildlife encounters.',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       link: '/contact',
       buttonText: 'Get Directions'
     }
