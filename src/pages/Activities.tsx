@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Users, Star, Camera, MapPin } from 'lucide-react';
-import safariImage from '@/assets/safari-activity.jpg';
+// Using public image path directly
 import { useActivities } from '@/hooks/useActivities';
 import { RatingDisplay } from '@/components/RatingDisplay';
 import { BookingModal } from '@/components/BookingModal';
@@ -27,7 +27,7 @@ const Activities = () => {
   const staticActivities = [
     {
       name: 'Etosha National Park Safari',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Full Day',
       groupSize: '2-8 people',
       difficulty: 'Easy',
@@ -39,7 +39,7 @@ const Activities = () => {
     },
     {
       name: 'Cultural Village Experience',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Half Day',
       groupSize: '2-12 people',
       difficulty: 'Easy',
@@ -50,7 +50,7 @@ const Activities = () => {
     },
     {
       name: 'Kavango River Safari',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Half Day',
       groupSize: '2-10 people',
       difficulty: 'Easy',
@@ -61,7 +61,7 @@ const Activities = () => {
     },
     {
       name: 'Caprivi Strip Fishing',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Full Day',
       groupSize: '2-6 people',
       difficulty: 'Moderate',
@@ -72,7 +72,7 @@ const Activities = () => {
     },
     {
       name: 'Bwabwata National Park',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Full Day',
       groupSize: '2-8 people',
       difficulty: 'Easy',
@@ -83,7 +83,7 @@ const Activities = () => {
     },
     {
       name: 'Okavango Delta Day Trip',
-      image: safariImage,
+      image: '/safari-activity.jpg',
       duration: 'Full Day',
       groupSize: '2-10 people',
       difficulty: 'Easy',
@@ -126,7 +126,7 @@ const Activities = () => {
               <Card key={activity.id} className="luxury-card overflow-hidden border-0">
                 <div className="image-hover aspect-[16/10] relative">
                   <img
-                    src={activity.images?.[0] || safariImage}
+                    src={activity.images?.[0] || '/safari-activity.jpg'}
                     alt={activity.name}
                     className="w-full h-full object-cover"
                   />
