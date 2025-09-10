@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Clock, MapPin, Phone } from 'lucide-react';
-import restaurantImage from '@/assets/restaurant.jpg';
+// Using public image path directly
 
 const Dining = () => {
   const [selectedCategory, setSelectedCategory] = useState('appetizers');
@@ -45,7 +45,7 @@ const Dining = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${restaurantImage})`,
+            backgroundImage: `url(/restaurant.jpg)`,
           }}
         >
           <div className="absolute inset-0 bg-black/50" />
