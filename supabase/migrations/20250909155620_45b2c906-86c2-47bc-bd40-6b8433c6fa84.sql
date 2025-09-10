@@ -1,0 +1,23 @@
+-- Insert sample rooms
+INSERT INTO public.rooms (name, description, capacity, size_sqm, price_nad, amenities, images, is_featured, is_available) VALUES
+('Luxury Safari Suite', 'Spacious suite with panoramic views of the Kalahari Desert. Features a private balcony, king-size bed, and luxury amenities for the ultimate safari experience.', 2, 65, 2500, ARRAY['King Size Bed', 'Private Balcony', 'Air Conditioning', 'Mini Bar', 'Safe', 'WiFi', 'En-suite Bathroom'], ARRAY['/src/assets/room-luxury-suite.jpg', '/src/assets/room-balcony.jpg'], true, true),
+('Executive Room', 'Elegant and comfortable room with modern amenities. Perfect for business travelers or couples seeking comfort and style in the heart of the Kalahari.', 2, 45, 1800, ARRAY['Queen Size Bed', 'Work Desk', 'Air Conditioning', 'WiFi', 'En-suite Bathroom', 'Coffee Machine'], ARRAY['/src/assets/room-executive.jpg', '/src/assets/room-bathroom.jpg'], true, true),
+('Family Room', 'Spacious accommodation perfect for families. Features separate sleeping areas and all necessary amenities for a comfortable stay with children.', 4, 55, 2200, ARRAY['Double Bed', 'Bunk Beds', 'Air Conditioning', 'WiFi', 'Family Bathroom', 'Mini Fridge', 'Seating Area'], ARRAY['/src/assets/room-family.jpg', '/src/assets/suite-room.jpg'], false, true),
+('Standard Suite', 'Comfortable and well-appointed suite offering excellent value. Features all essential amenities for a pleasant stay in the Kalahari.', 2, 40, 1500, ARRAY['Double Bed', 'Air Conditioning', 'WiFi', 'En-suite Bathroom', 'Seating Area'], ARRAY['/src/assets/suite-room.jpg'], false, true);
+
+-- Insert sample activities
+INSERT INTO public.activities (name, description, duration, capacity, difficulty_level, price_nad, includes, images, is_featured, is_available, category) VALUES
+('Kalahari Desert Safari', 'Experience the breathtaking beauty of the Kalahari Desert on this guided safari adventure. Spot unique wildlife and learn about desert survival from expert guides.', '4 hours', 8, 'moderate', 850, ARRAY['Professional Guide', 'Transportation', 'Refreshments', 'Binoculars', 'Photography Opportunities'], ARRAY['/src/assets/safari-activity.jpg', '/src/assets/gallery-desert.jpg'], true, true, 'safari'),
+('Wildlife Photography Tour', 'Capture stunning images of Kalahari wildlife with professional photography guidance. Perfect for both amateur and experienced photographers.', '6 hours', 6, 'easy', 1200, ARRAY['Professional Photographer Guide', 'Equipment Rental', 'Lunch', 'Transportation', 'Photo Editing Tips'], ARRAY['/src/assets/gallery-wildlife.jpg', '/src/assets/safari-activity.jpg'], true, true, 'photography'),
+('Desert Survival Experience', 'Learn essential desert survival skills from Bushmen guides. An educational and thrilling adventure into traditional Kalahari survival techniques.', '3 hours', 10, 'challenging', 950, ARRAY['Bushmen Guide', 'Traditional Tools', 'Fire Making', 'Water Finding', 'Plant Identification'], ARRAY['/src/assets/gallery-desert.jpg'], false, true, 'adventure'),
+('Sunset Desert Walk', 'Peaceful evening walk through the desert landscape during the magical golden hour. Perfect for couples and nature lovers.', '2 hours', 12, 'easy', 450, ARRAY['Expert Guide', 'Refreshments', 'Blanket for Sitting', 'Traditional Stories'], ARRAY['/src/assets/gallery-desert.jpg'], false, true, 'nature'),
+('Night Sky Stargazing', 'Discover the wonders of the southern hemisphere night sky in one of the world''s darkest places. Professional astronomy guide included.', '2.5 hours', 15, 'easy', 650, ARRAY['Telescope Access', 'Astronomy Guide', 'Star Charts', 'Hot Beverages', 'Comfortable Seating'], ARRAY['/src/assets/gallery-desert.jpg'], true, true, 'astronomy');
+
+-- Insert sample gallery items
+INSERT INTO public.gallery (title, description, image_url, category, is_featured, sort_order) VALUES
+('Luxury Guesthouse Exterior', 'Our beautiful guesthouse nestled in the Kalahari landscape', '/src/assets/gallery-guesthouse.jpg', 'accommodation', true, 1),
+('Desert Landscape', 'Breathtaking views of the Kalahari Desert at sunset', '/src/assets/gallery-desert.jpg', 'landscape', true, 2),
+('Wildlife Encounter', 'Amazing wildlife spotted during our safari tours', '/src/assets/gallery-wildlife.jpg', 'wildlife', true, 3),
+('Guesthouse at Dawn', 'Morning light illuminating our accommodation', '/src/assets/hero-guesthouse.jpg', 'accommodation', false, 4),
+('Fine Dining Experience', 'Exquisite meals prepared by our talented chefs', '/src/assets/restaurant.jpg', 'dining', false, 5),
+('Safari Adventure', 'Guests enjoying an authentic Kalahari safari experience', '/src/assets/safari-activity.jpg', 'activities', false, 6);
