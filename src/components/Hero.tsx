@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-guesthouse.jpg';
 
 const Hero = () => {
@@ -32,18 +33,22 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="btn-luxury bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
-            >
-              Book Your Stay
-            </Button>
-            <Button 
-              size="lg"
-              className="btn-luxury bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
-            >
-              Explore Activities
-            </Button>
+            <Link to="/rooms">
+              <Button 
+                size="lg" 
+                className="btn-luxury bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
+              >
+                Book Your Stay
+              </Button>
+            </Link>
+            <Link to="/activities">
+              <Button 
+                size="lg"
+                className="btn-luxury bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
+              >
+                Explore Activities
+              </Button>
+            </Link>
           </div>
         </div>
 

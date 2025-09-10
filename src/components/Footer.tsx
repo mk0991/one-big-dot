@@ -69,8 +69,8 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-secondary-foreground/80">
-                    1234 Safari Avenue<br />
-                    Windhoek, Namibia
+                    ERF 1155, Usivi Road, Tutungeni<br />
+                    Rundu, Namibia
                   </p>
                 </div>
               </div>
