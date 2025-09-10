@@ -63,6 +63,18 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        'gradient-bg': 'var(--gradient-bg)',
+      },
+      boxShadow: {
+        'number-glow': 'var(--number-glow)',
+      },
+      textShadow: {
+        'number': 'var(--number-text-shadow)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+      },
       keyframes: {
         "accordion-down": {
           from: {
