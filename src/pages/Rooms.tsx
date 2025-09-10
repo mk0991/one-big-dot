@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Users, Wifi, Car, Coffee, Bath, Tv } from 'lucide-react';
-import suiteImage from '@/assets/suite-room.jpg';
+// Using public image path directly
 import { useRooms } from '@/hooks/useRooms';
 import { RatingDisplay } from '@/components/RatingDisplay';
 import { BookingModal } from '@/components/BookingModal';
@@ -59,7 +59,7 @@ const Rooms = () => {
                     {/* Image */}
                     <div className="image-hover aspect-[4/3] lg:aspect-auto relative">
                       <img
-                        src={room.images?.[0] || suiteImage}
+                        src={room.images?.[0] || '/suite-room.jpg'}
                         alt={room.name}
                         className="w-full h-full object-cover"
                       />
